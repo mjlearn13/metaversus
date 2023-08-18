@@ -1,11 +1,10 @@
 'use client';
 
-import { motion } from "framer-motion";
-import { socials } from "../constants";
+import { motion } from 'framer-motion';
+import { socials } from '../constants';
 
-
-import styles from "../styles";
-import { footerVariants } from "../utils/motion";
+import styles from '../styles';
+import { footerVariants } from '../utils/motion';
 
 const Footer = () => (
   <motion.footer
@@ -46,7 +45,7 @@ const Footer = () => (
           </p>
           <div className="flex gap-4">
             {socials.map((social) => (
-              <img 
+              <img
                 key={social.name}
                 src={social.url}
                 alt={social.name}
@@ -58,6 +57,6 @@ const Footer = () => (
       </div>
     </div>
   </motion.footer>
-)
+);
 
 export default Footer;
